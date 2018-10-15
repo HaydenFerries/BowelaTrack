@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BowelaTrack</string>
+    <string name="clickblock">clickBlock</string>
+    <string name="home">Home</string>
+    <string name="calendar">Calendar</string>
+    <string name="title">Title</string>
+    <string name="help">Help</string>
+    <string name="plus_one">Plus One</string>
+    <string name="logo">Logo</string>
+    <string name="runny_poo">Runny Poo?</string>
+    <string name="painful_poo">Painful Poo?</string>
+    <string name="can_t_poo">Can\'t Poo?</string>
+    <string name="heading">Heading</string>
+    <string-array name="settings">
+        <item></item>
+        <item>Reset Data</item>
+        <item>Exit</item>
+    </string-array>
+</resources>

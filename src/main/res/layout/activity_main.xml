@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/calendarButton"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="84dp"
+        android:background="@null"
+        android:contentDescription="@string/calendar"
+        android:onClick="CalendarClicked"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plusOneButton"
+        app:srcCompat="@drawable/calendar1" />
+
+    <ImageButton
+        android:id="@+id/plusOneButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="24dp"
+        android:background="@null"
+        android:contentDescription="@string/plus_one"
+        android:onClick="PlusOneClicked"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/plusone" />
+
+    <ImageButton
+        android:id="@+id/helpButton"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="84dp"
+        android:background="@null"
+        android:contentDescription="@string/help"
+        android:onClick="HelpClicked"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plusOneButton"
+        app:srcCompat="@drawable/help1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="17dp"
+        android:contentDescription="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heading" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="116dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo1" />
+
+    <Spinner
+        android:id="@+id/settings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/cog1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

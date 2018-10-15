@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/helpLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/runnyPoo"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="4dp"
+        android:background="#bf8256"
+        android:onClick="RunnyPoo"
+        android:text="@string/runny_poo"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#45413c"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/painfulPoo"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:background="#bf8256"
+        android:onClick="PainfulPoo"
+        android:text="@string/painful_poo"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#45413c"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/runnyPoo" />
+
+    <Button
+        android:id="@+id/cantPoo"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:background="#bf8256"
+        android:onClick="CantPoo"
+        android:text="@string/can_t_poo"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#45413c"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/painfulPoo" />
+
+    <Button
+        android:id="@+id/homeButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="161dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="16dp"
+        android:background="#bf8256"
+        android:onClick="GoHome"
+        android:text="@string/home"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#45413c"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/helpText"
+        android:layout_width="326dp"
+        android:layout_height="221dp"
+        android:layout_marginBottom="11dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

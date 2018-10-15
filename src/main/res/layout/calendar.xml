@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calendarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        app:eventsEnabled="true"
+        app:headerColor="#A5714E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:selectionColor="#A5714E"
+        app:type="one_day_picker">
+
+    </com.applandeo.materialcalendarview.CalendarView>
+
+    <Button
+        android:id="@+id/homeButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="161dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="16dp"
+        android:background="#bf8256"
+        android:onClick="GoHome"
+        android:text="@string/home"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#45413c"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+</android.support.constraint.ConstraintLayout>
